@@ -18,7 +18,6 @@ document.addEventListener('scroll', function () {
     }
     if (body.getBoundingClientRect().top <= -514 && !leftSwitched) {
         leftAbbr.style.display = 'block'
-        leftAbbr.style.visibility = 'visible'
         setTimeout(function () { // Transition Effect won't be shown if not using setTimeout
             leftAbbr.style.opacity = 1            
         }, 0)
@@ -26,7 +25,6 @@ document.addEventListener('scroll', function () {
     } else if (body.getBoundingClientRect().top > -514 && leftSwitched) {
         leftAbbr.style.opacity = 0
         setTimeout(function () { // Wait until transition finished.
-            leftAbbr.style.visibility = 'hidden'
             leftAbbr.style.display = null            
         }, 300)
         leftSwitched = false
