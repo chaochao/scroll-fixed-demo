@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            height: 64px;
+            background: #24292e;
+        }
+        .container {
+            display: flex;
+            width: 1024px;
+            margin: 0 auto;
+        }
+        .left {
+            width: 240px;
+            /* margin-top: 50px; */
+            margin-right: 24px;
+            height: 450px;
+            background: #37C6C0;
+            transition: 0.5s;
+        }
+        .left-abbr {
+            width: 264px;
+            height: 63px;
+            background: #D0E9FF;
+            border-bottom: solid 1px #d1d5da;
+            display: none;
+        }
+        .right {
+            margin-top: 40px;
+            flex: 1;
+            height: 1500px;
+        }
+        .nav-placeholder {
+            display: none;
+        }
+        .nav {
+            height: 63px;
+            width: 760px;
+            background: #D0E9FF;
+            border-bottom: solid 1px #d1d5da;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div class="container">
+        <div class="left" id="left"></div>
+        <div class="left-abbr" id="left-abbr"></div>
+        <div class="right">
+            <div class="nav nav-placeholder"></div>
+            <div class="nav" id="nav">
+            </div>
+        </div>
+    </div>
+    <script src="scroll.js"></script>
+</body>
+</html>
